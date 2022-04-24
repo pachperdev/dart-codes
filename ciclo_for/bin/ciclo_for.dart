@@ -1,5 +1,14 @@
-import 'package:ciclo_for/ciclo_for.dart' as ciclo_for;
+void main(List<String> args) {
+  List<String> listaPaises = ['Colombia', 'Mexico', 'Argentina', 'Brazil'];
 
-void main(List<String> arguments) {
-  print('Hello world: ${ciclo_for.calculate()}!');
+  for (int pos = 0; pos < listaPaises.length; pos++) {
+    print('Pais ${pos + 1}: ${listaPaises[pos]}');
+  }
+
+  print('----------');
+
+  int numero = 10;
+  for (var i = 0; i <= 10; i++) {
+    print('$i X $numero = ${i * numero} ');
+  }
 }
