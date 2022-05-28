@@ -3,14 +3,15 @@ En este ejemplo veremos que es una lista y como utilizarla
 lISTA: una lista es una coleccion de objetos de tipo tipada o incluso dinamica
 */
 
-List listaEnteros(List<int> param) {
-  List<int> listEnteros = [1, 2, 3, 4, 5];
-  listEnteros.add(200);
-  listEnteros.add(300); //Con este metodo agrego valores a la lista de enteros
+List<int> listaInt(List<int> param) {
+  List<int> listEnteros = param;
+  listEnteros.add(20);
+  listEnteros.add(30);
+  listEnteros.add(50); //Con este metodo agrego valores a la lista de enteros
   return listEnteros;
 }
 
-List listaString() {
+List<String> listaString() {
   List<String> listaPaises = ['Mexico', 'Colombia', 'Argentina'];
   listaPaises.addAll([
     'peru',
